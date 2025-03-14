@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>甜甜专属网页 | wwB 制作</title>
+    <!-- 引入像素字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Press Start 2P', cursive; /* 使用像素字体 */
+        }
+
+        body {
+            background-color: #f0f0f0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ffb6c1, #ff69b4, #ff1493);
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        h1 {
+            font-size: 4.5rem; /* 增大字体大小 */
+            letter-spacing: 3px;
+            margin-bottom: 1rem;
+        }
+
+        .theme-number {
+            color: #e74c3c;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white; /* 白色描边 */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .content-section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        nav {
+            background: #ff69b4; /* 导航栏背景改为淡粉色 */
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>☆甜甜专属网页☆</h1>
+        <div class="theme-number">欢迎甜甜和打开这个网页的朋友们(^_^)☆</div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">这个网页我是专门给甜甜搞的（看着有点单调啊QAQ）</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="container">
+        <section class="content-section">
+            <h2>欢迎tian甜aaa</h2>
+            <p>收集关于甜甜的东西之类的</p>
+            
+            <div class="grid">
+                <!-- 第一个项目卡片 -->
+                <div class="card" onclick="window.open('project1.html', '_blank')">
+                    <h3>网站 1</h3>
+                   <p>打开跳转到粉丝（黑）制作的游戏</p>
+               </div>
+                <!-- 第二个项目卡片 -->
+                <div class="card" onclick="window.open('https://itch.io/', '_blank')">
+                    <h3>网站 2</h3>
+                    <p>123</p>
+                </div>
+                <!-- 第三个项目卡片 -->
+                <div class="card" onclick="window.open('random-image.html', '_blank')">
+                    <h3>关于甜甜画的图片￣ω￣</h3>
+                    <p>打开调到图片</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>最新动态</h2>
+            <p>网站建设中... —— 网站由快手 wwB 制作</p>
+        </section>
+    </div>
+
+    
+
+    <footer>
+        <p>&copy; 2025 wwB. All rights reserved.</p>
+    </footer>
+</body>
+</html>
